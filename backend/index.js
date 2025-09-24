@@ -17,7 +17,7 @@ app.use(cors());
 // In-memory OTP store: { email: { otp, expiresAt, verified } }
 const otpStore = {};
 
-const mongooseURI = 'mongodb+srv://vyankateshc21:vmck@cluster0.plecrab.mongodb.net/yourdbname?retryWrites=true&w=majority';
+const mongooseURI = '';
 mongoose.connect(mongooseURI)
     .then(() => console.log('✅ MongoDB connected successfully.'))
     .catch(err => {
